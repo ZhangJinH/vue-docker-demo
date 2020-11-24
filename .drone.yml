@@ -1,0 +1,11 @@
+branches: [master]
+
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: node
+  commands: 
+  - npm install
+  - npm run build
